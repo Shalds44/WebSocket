@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h3>WebSocket</h3>
+    <form id="formulaire" action="">
+        <label for="Message"></label>
+        <input type="text" id="messageInput">
+        <button type="submit">Send</button>
+    </form>
+    <div>
+        <p id="message"></p>
+    </div>
+
+    <div>
+        <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <div>
+        <canvas id="canvas-save" width="300" height="300"></canvas>
+        <button id="saveButton" type="submit">saveImage</button>
+        <button id="restoreButton" type="submit">restoreImage</button>
+    </div>
+</body>
+</html>
+<script src="./index.js"></script>
+<script src="./canvas.js"></script>
+
